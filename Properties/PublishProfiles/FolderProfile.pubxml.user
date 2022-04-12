@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\MD\source\repos\mmaAPI\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2022-04-11T11:38:12.4024674Z;True|2022-04-11T11:52:42.4457120+01:00;True|2022-04-11T02:50:12.8958326+01:00;</History>
+  </PropertyGroup>
+</Project>
