@@ -116,5 +116,13 @@ namespace mmaAPI.Dtos
         public decimal Price { get; set; }
     }
 
+    public class UpdateOrderStatusDto
+    {
+        public int Id { get; set; }
+        public int StatusId { get; set; }
+        public string Remarks { get; set; }
+        
+    }
+
 
 }

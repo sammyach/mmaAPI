@@ -27,5 +27,13 @@ namespace mmaAPI.Controllers
             var categories = await _context.Categories.ToListAsync();
             return Ok(categories);
         }
+
+        [HttpGet]
+        [Route("orderstatus/all")]
+        public async Task<IActionResult> GetAllOrderStatus()
+        {
+            var data = await _context.OrderStatus.ToListAsync();
+            return Ok(data);
+        }        
     }
 }

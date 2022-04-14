@@ -145,6 +145,9 @@ namespace mmaAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateProduct(CreateItemDto data)
         {
+            var user = (Users)HttpContext.Items["User"];
+            if (user == null) return Unauthorized();
+
             var product = new Products { Name = data.Name, Description = data.Description, Price = data.Price, Quantity = data.Quantity, DateCreated = DateTime.Now, CategoryId = data.CategoryId  };
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
